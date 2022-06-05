@@ -1,0 +1,133 @@
+*TIPOS DE SAÍDA*:
+- document.getElementById('idElemento').innerHTML = "texto"; (OPERAÇÕES NÃO PRECISAM DE ASPAS)
+- console.log("texto"); (SERVE PRA TESTES)
+- alert("texto"); (ALERTA NO BROWSER)
+
+
+
+
+*VÁRIAVEIS*:
+- var: pode ser alteradodurante o código em qualquer momento.
+ex:
+    var a = 2
+    {
+        a = 10
+    }
+no final:
+    fora: a = 10
+    dentro: a = 10
+
+- let: vai ser declarada e só altera dentro de outro escopo.
+ex:
+    let a = 2
+    {
+        a = 10
+    }
+no final:
+    fora: a = 2
+    dentro: a = 10
+
+- const: constante, o valor sempre vai ser o primeiro definido.
+ex:
+    const a = 2
+    {
+        a = 10
+    }
+no final:
+    fora: a = 2
+    dentro: a = 2
+
+
+
+
+*DECLARAÇÃO E ATRIBUIÇÃO DE VÁRIAVEIS*:
+- let a = 1;
+  let b = 2;
+  let c = a + b;
+
+OU
+
+- let a, b, c;
+    a = 1;
+    b = 2;
+    c = a + b;
+
+
+
+
+*OPERADORES*
+- aritmédico:
+    "+": mais (1 + 2); 
+    "-": menos (1 - 2);
+    "*": vezes (1 * 2);
+    "/": divisão (1 / 2);
+    "++": aumenta um à variável (valor1 = 15, ++valor1 = 16);
+    "--": diminui um à variável (valor1 = 15, --valor1 = 14);
+
+- atribuição:
+    "=": atribuir algo a outra coisa (nome = "gustavo");
+    "+=": atalho de "valor1 = valor1 + valor2" para "valor1 += valor2";
+    "-=": atalho de "valor1 = valor1 - valor2" para "valor1 -= valor2";
+    "*=": atalho de "valor1 = valor1 * valor2" para "valor1 *= valor2";
+    "/=": atalho de "valor1 = valor1 / valor2" para "valor1 /= valor2";
+
+- sequência:
+    "+": quando são palavras, o + se torna um operador sequencial (nome + sobrenome);
+
+- comparação:
+    "<": menor que (a < b) [true ou false];
+    ">": maior que (a > b) [true ou false];
+    "<=": menor ou igual que (a <= b) [true ou false];
+    ">=": maior ou igual que (a >= b) [true ou false];
+
+    "==": verifica se um valor é IGUAL a outro, se sim, retorna "true", se não, retorna "false" 
+    ex:
+    var valor1, valor2, total;
+    valor1 = 8;
+    valor2 = 8;
+    total = (valor1 == valor2); [RESULTADO: TRUE]
+
+    "===": verifica se o valor e o tipo da váriavel são IGUAIS
+    ex:
+    var valor1, valor2, total;
+    valor1 = 8;
+    valor2 = "8";
+    total = (valor1 === valor2); [RESULTADO: FALSE]
+
+    "!=": verifica se um valor é DIFERENTE de outro, se sim, retorna "true", se não, retorna "false" 
+    ex:
+    var valor1, valor2, total;
+    valor1 = 8;
+    valor2 = 8;
+    total = (valor1 != valor2); [RESULTADO: FALSE]
+
+    "!==": verifica se o valor e o tipo da váriavel são DIFERENTES
+    ex:
+    var valor1, valor2, total;
+    valor1 = 8;
+    valor2 = "8";
+    total = (valor1 !== valor2); [RESULTADO: TRUE]
+
+- condicional
+    passa uma condição à uma variável na hora de dar um valor a ela ((condição) ? "if true":"if false")
+    ex:
+    var idade, maiorIdade;
+    idade = 18;
+    maiorIdade = (idade >= 18) ? "Maior de idade":"Menor de idade";
+
+- lógico
+    "&&": é o mesmo que "e" e funciona com true e false (condição1 && condição2);
+    "||": é o mesmo que "ou" e funciona com true e false (condição1 || condição2);
+    "!": nega uma condição e funciona com true e false (!(condição));
+    exs:
+    var idade, resultado;
+    idade = 13;
+    resultado = (idade > 10 && idade < 15); [RESULTADO: TRUE]
+    resultado = (idade > 10 || idade < 15); [RESULTADO: TRUE]
+    resultado = !(idade > 10); [RESULTADO: FALSE] 
+
+
+
+
+*FUNÇÕES*
+
